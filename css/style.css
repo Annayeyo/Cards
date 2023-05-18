@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Space Grotesk' serif;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 body {
@@ -11,14 +11,19 @@ body {
 .container {
     margin: auto;
     width: 80%;
+    padding-bottom: 10%;
 }
 
 .post {
     display: flex;
     justify-content: space-between;
-    
+    margin-bottom: 4%;
     margin-top: 50px;
 }
+
+/* .post>h1 {
+    vertical-align: baseline;
+} */
 
 .b-post {
     color: black;
@@ -35,6 +40,24 @@ body {
 
 .card-container > div {
     width: 30%;
+    background: white;
+}
+
+ .post-1, .post-2, .post-3 {
+    border-bottom: transparent solid 1px;
+    border-radius: 30px;
+}  
+
+.post-1>img, .post-3>img {
+    border-top: solid 1px #fad7db;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.post-2>img {
+    border-top: #fee6e2 1px solid;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 
 .card-container img {
@@ -43,6 +66,18 @@ body {
 
 .text-wrap {
     padding: 37px 32px 43px;
+}
+
+.text-wrap > h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.text-wrap > p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
 }
 
 div.text-wrap > p {
@@ -58,6 +93,33 @@ div.text-wrap > h2 {
     display: flex;
 }
 
+.d-flex a {
+    color: black;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
 .jc-space-between {
     justify-content: space-between;
+}
+
+.shadow{
+    box-shadow: 0 5px 16px 0 rgba(8, 15, 52, 0.07) !important;
+    transition: all 300ms ease, transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+/* .post-1:hover, .post-2:hover, .post-3:hover {
+    
+} */
+
+.post-1:hover h2, .post-1:hover a, .post-1:hover .d-flex {
+    color: #0d6efd;
+    transition: 0.4s;
+}
+.post-2:hover h2, .post-2:hover a, .post-2:hover .d-flex {
+    color: #0d6efd;
+    transition: 0.4s;
+}
+.post-3:hover h2, .post-3:hover a, .post-3:hover .d-flex {
+    color: #0d6efd;
+    transition: 0.4s;
 }
