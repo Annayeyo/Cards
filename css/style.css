@@ -111,6 +111,11 @@ div.text-wrap > h2 {
     
 } */
 
+.b-post:hover {
+background-color: #cececfb5;
+transition: 0.5s;
+}
+
 .post-1:hover h2, .post-1:hover a, .post-1:hover .d-flex {
     color: #0d6efd;
     transition: 0.4s;
